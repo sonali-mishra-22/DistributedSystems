@@ -6,9 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by tphadke on 8/29/17.
- */
 public class Main {
     Map <Processor, List<Processor> > graph ;
     Processor root ;
@@ -23,8 +20,6 @@ public class Main {
         m.graph.keySet().iterator().next().sendMessgeToMyBuffer(null, null);
         printResult(m);
         
-        //TODO: Choose a processor as a Root
-        //TODO: Send an initial message Message.M to this processor.
     }
 
     private static void printResult(Main m) {
